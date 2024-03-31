@@ -1,0 +1,55 @@
+body{
+    background-image: url('./static/tumblr_obfjz6Bd9f1runoqyo1_540.gif');
+    background-size: cover;
+    
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: Boogaloo;
+    src: url(../assets/fonts/Boogaloo-Regular.ttf);
+  }
+
+.linkcolor {
+    color: aliceblue;
+}
+
+.linkcolor:hover {
+    color: rgb(187, 35, 35);
+    
+}
+.floating-gif {
+    position: fixed;
+
+    z-index: 9998; /* Para garantir que fique acima de outros elementos */
+}
+
+
+
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+  .container {
+    width: 50%;
+    background-color: rgb(151, 15, 15);
+    overflow-x: hidden;
+  }
+
+  .container:hover {
+    background-color: rgb(27, 114, 20);
+  }
+  .horizontal-scrolling-items {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    font-size: 20px;
+    color: aliceblue;
+    width: auto;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }

@@ -1,0 +1,20 @@
+body{
+    background-image: url('./static/tumblr_obfjz6Bd9f1runoqyo1_540.gif');
+    background-size: cover;
+    
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: Boogaloo;
+    src: url(../assets/fonts/Boogaloo-Regular.ttf);
+  }
+
+.linkcolor {
+    color: aliceblue;
+}
+
+.linkcolor:hover {
+    color: orange;
+    
+}
